@@ -1,0 +1,15 @@
+<app-formulario-seccion (enviaSeccion)="tomarSeccion($event)"></app-formulario-seccion>
+<app-formulario-alumno [class]="tomarSeccion" (envioAlumno)="tomarAlumno($event)" (envioRegistro)="tomarRegistro($event)"></app-formulario-alumno>
+<app-lista-alumno  [alumnos]="alumnoGrabado" [ngClass]="{muestraAlumno}"> </app-lista-alumno>
+<br>
+<button type="button" (click)="listaAlumno()"> Lista Alumnos </button>
+<br>
+
+<app-lista-historial [registros]="registroGrabado" [ngClass]="{muestra}"> </app-lista-historial>
+<br>
+<button type="button" (click)="muestraHistorial()"> Lista Historial </button>
+<br>
+
+
+
+
